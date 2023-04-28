@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --primary: hotpink;
+    --secondary: blue;
+    --dark: purple;
+    --light: lightblue;
+    --text: black;
+    --white: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal {
+    display: flex;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+#view-scores:hover {
+    opacity: 50%;
+}
+
+header h3 {
+    display: inline;
+    padding: 10px;
+}
+
+.timer {
+    display: inline;
+    text-align: right;
+    padding: 10px;
+}
+
+.hero {
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--secondary);
+    font-size: 36px;
+}
+
+p {
+    color: var(--dark);
+    font-size: 20px;
+}
+
+.start {
+    align-items: center;
+    text-align: center;
+}
+
+.start h1 {
+    align-items: center;
+    text-align: center;
+}
+
+.start p {
+    align-items: center;
+    text-align:center;
+}
+
+.questions {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: auto;
+}
+
+.end h1 {
+    text-align: center;
+}
+
+.end p {
+    text-align: center;
+}
+
+.end input {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--primary);
+    padding: 10px;
+    width: 25%;
+    font-size: 24px;
+}
+
+#score {
+    text-align: center;
+}
+
+#question {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    font-size: 24px;
+}
+
+.btn-score {
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    margin: 5px;
+}
+
+.btn-score:hover {
+    opacity: 50%;
+}
+
+.btn-list {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 5px;
+    margin: 10px 0;
+}
+
+.btn-main {
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    margin: 5px;
+    width: 25%;
+}
+
+#btn-answers {
+    width: 50%;
+    text-align: left;
+    font-size: 24px;
+}
